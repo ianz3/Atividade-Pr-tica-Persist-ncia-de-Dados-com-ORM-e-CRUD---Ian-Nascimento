@@ -99,13 +99,3 @@ O Queijo Mussarela (id 3) foi excluído com `delete()`. Em seguida, `loadFromId(
 Uma última execução independente de `loadAll()` traz exatamente o estado final: o Arroz com o novo preço e o Leite com 90 unidades. Os dados sobreviveram ao fim de todos os processos anteriores, porque estão gravados no banco.
 
 ![Persistência](prints/08-persistencia-console.png)
-
----
-
-## 4. Como executar
-
-1. Adicione as bibliotecas acima ao BlueJ e reinicie-o.
-2. Abra a pasta do projeto no BlueJ e compile.
-3. Clique com o botão direito em `TesteCRUD` → `void main(String[] args)`, **ou** crie os objetos `Database`, `ProdutoRepository` e `Produto` na bancada e chame os métodos manualmente.
-4. Para rodar etapa por etapa pelo terminal: `javac -cp "lib/*" *.java` e depois `java -cp ".:lib/*" Etapa create` (troque `create` por `read`, `update`, `delete` ou `persist`). No Windows, use `;` no lugar de `:`.
-5. Abra `estoque.db` no DB Browser for SQLite para conferir as tabelas.
